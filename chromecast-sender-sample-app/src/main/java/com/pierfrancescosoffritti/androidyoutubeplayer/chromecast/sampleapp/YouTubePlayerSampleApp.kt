@@ -1,0 +1,5 @@
+package com.pierfrancescosoffritti.androidyoutubeplayer.chromecast.sampleapp
+
+import androidx.multidex.MultiDexApplication
+
+class ChromecastSenderSampleApp : MultiDexApplication()

@@ -10,6 +10,8 @@ android {
     targetSdkVersion versions.compileSdk
     versionCode versions.publishVersionCode_chromecast
     versionName versions.publishVersion_chromecast
+
+    multiDexEnabled true
   }
 
   buildTypes {
@@ -44,6 +46,7 @@ dependencies {
   implementation project(':core')
   implementation project(':chromecast-sender')
 
+  implementation "androidx.multidex:multidex:$versions.multidex"
   implementation "androidx.appcompat:appcompat:$versions.appcompat"
   implementation "androidx.recyclerview:recyclerview:$versions.androidxRecyclerView"
   implementation "androidx.constraintlayout:constraintlayout:$versions.androidxConstraintLayout"
