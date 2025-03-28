@@ -31,8 +31,4 @@ allprojects {
   tasks.withType(Javadoc).all {
     enabled = false
   }
-
-  tasks.withType(Sign) {
-    onlyIf { project.hasProperty('signing.keyId') }
-  }
 }
