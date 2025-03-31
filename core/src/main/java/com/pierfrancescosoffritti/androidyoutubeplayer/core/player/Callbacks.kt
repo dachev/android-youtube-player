@@ -1,8 +1,8 @@
-package com.pierfrancescosoffritti.androidyoutubeplayer.core.player.callbacks
+package com.pierfrancescosoffritti.androidyoutubeplayer.core.player
 
 /**
  * A callback accepting a Boolean value
  */
-fun interface BooleanCallback {
+fun interface BooleanProvider {
     fun accept(value: Boolean)
 }
